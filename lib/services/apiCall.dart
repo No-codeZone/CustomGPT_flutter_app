@@ -6,12 +6,11 @@ import '../fine-tune model/ResponsePrimeGPT.dart';
 import '../models/chat_model.dart';
 
 class ApiCallService {
-  String apiKeyGpt = "sk-proj-9RedY7XIWbb7yh74AAGWT3BlbkFJyJXIz4aB9baah8Gyez3h";
-  String apiKeyBot = "sk-proj-iAb7UWi0r61z6JOECBftT3BlbkFJ01bzzTOKTXqgGyWTllFL";
+  String apiKeyGpt = "sk-YOUR-API-KEY";
+  String apiKeyBot = "sk-YOUR-API-KEY-BOT";
   String modelGPT = "gpt-3.5-turbo";
-  // String botModelGPT = "ft:gpt-3.5-turbo-0125:techstern:responseprimegpt:9MBSADAE";
-  String botModelGPT = "ft:gpt-3.5-turbo-0125:techstern:botchatgpt:9MvZqRAc";
-  String trainingFileID = "file-p63hmoLdE3paZiN3XZZtRGhL";
+  String botModelGPT = "OUTPUT-MODEL";
+  String trainingFileID = "file-YOUR-TRAINING-FILE-ID";
   late bool useFineTuned;
 
   Future<ChatGptResponse?> sendGptMessage(ChatSendModel message) async {
