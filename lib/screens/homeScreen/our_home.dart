@@ -46,19 +46,6 @@ class _OurHomeState extends State<OurHome> {
   //   return combinedMessages;
   // }
 
-  // List<dynamic> getCombinedMessages(CurrentState currentState) {
-  //   List<dynamic> combinedMessages = [];
-  //   combinedMessages.addAll(currentState.listMessages);
-  //
-  //   combinedMessages.sort((a, b) {
-  //     if (a is MessageBuilderUiModel && b is MessageBuilderUiModel) {
-  //       return a.message.compareTo(b.message);
-  //     } else {
-  //       return 0;
-  //     }
-  //   });
-  //   return combinedMessages;
-  // }
 
   @override
   void initState() {
@@ -117,19 +104,7 @@ class _OurHomeState extends State<OurHome> {
                 slivers: [
                   SliverToBoxAdapter(
                       child: Consumer2<CurrentState, CurrentBotState>(
-                        builder: (context, currentState, currentBotState, _) {
-                          // int itemCountProvider =
-                          //     currentState.listMessages.length;
-                          // int itemCountBotProvider =
-                          //     currentBotState.listBotMessages.length;
-                          // int itemFinalCountProvider = currentState.listMessages.length >
-                          //         currentBotState.listBotMessages.length
-                          //     ? currentState.listMessages.length
-                          //     : currentBotState.listBotMessages.length ;
-                          // >= currentBotState.listBotMessages.length)
-                          // ? currentState.listMessages.length
-                          // : currentBotState.listBotMessages.length;
-                          // , __
+                        builder: (context, currentState, currentBotState, _) 
 
                           return ListView.builder(
                             physics: const ClampingScrollPhysics(),
