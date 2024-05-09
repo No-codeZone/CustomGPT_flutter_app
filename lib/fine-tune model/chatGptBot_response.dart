@@ -1,3 +1,4 @@
+///Addition model to look for the status of tuned model, whether succededor failed 
 class ChatGptBotResponse {
   ChatGptBotResponse({
      this.object,
