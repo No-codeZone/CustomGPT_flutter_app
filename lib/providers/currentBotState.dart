@@ -8,10 +8,8 @@ class CurrentBotState extends ChangeNotifier {
   bool loading = false;
   ApiCallService apiCallService = ApiCallService();
   String modelGPT = "gpt-3.5-turbo";
-  // String botModelGPT = "ft:gpt-3.5-turbo-0125:techstern:responseprimegpt:9MBSADAE";
-  String botModelGPT = "ft:gpt-3.5-turbo-0125:techstern:botchatgpt:9MvZqRAc";
-  // String trainingFileID = "file-p63hmoLdE3paZiN3XZZtRGhL";
-  String trainingFileID = "file-DO7CPxbRBKeOkV9Z1th7wUIW";
+  String botModelGPT = "OUTPUT-MODEL-ID";
+  String trainingFileID = "file-YOUR-TRAINING-FILE-ID";
   String role = "user";
 
   List<MessageBotBuilderUiModel> listBotMessages = [];
